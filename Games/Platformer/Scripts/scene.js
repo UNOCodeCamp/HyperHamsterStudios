@@ -7,7 +7,7 @@ function Scene()
   this.height = null;
   this.width = null;
   this.image=new Image();
-  this.image.src="assets/_Startblock.png"
+  this.image.src="assets/Startblock.png"
 
   this.draw = function()
   {
