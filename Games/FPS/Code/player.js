@@ -1,11 +1,12 @@
 player = new Object();
 
-player.x = null;
-player.y = null;
+player.x = viewport.height;
+player.y = viewport.width;
 player.image = new Image();
-player.image.src = "";
+player.image.src = "assets/crosshair.png";
 player.width = 32;
 player.height = 32;
+player.isAttacking=false;
 
 
 player.draw = function()
@@ -31,5 +32,6 @@ player.move = function(x, y)
 
 player.attack = function()
 {
-
+	player.isAttacking=true;
+	game.ammo -=1
 };
